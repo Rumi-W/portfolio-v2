@@ -6,7 +6,7 @@ React v17, Material UI v4
 
 ### Demo
 
-[Open Application](https://Rumi-W.github.io/portfolio-2/)
+[Open Application](https://Rumi-W.github.io/portfolio-v2/)
 
 ### Install
 
