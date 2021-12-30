@@ -15,9 +15,11 @@ const useStyles = makeStyles((theme) => ({
             height: '90%'
         },
         [theme.breakpoints.down('xs')]: {
-            height: 'auto',
+            height: '90vh',
             overflow: 'scroll',
             marginTop: theme.spacing(2),
+            marginBottom: theme.spacing(2),
+            paddingTop: theme.spacing(2),
             background: 'transparent'
         }
     },
@@ -41,7 +43,9 @@ const useStyles = makeStyles((theme) => ({
             marginBottom: theme.spacing(2)
         },
         [theme.breakpoints.down('xs')]: {
-            marginBottom: 0
+            height: 'auto',
+            marginBottom: theme.spacing(1),
+            marginTop: theme.spacing(1)
         }
     }
 }))
