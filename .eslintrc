@@ -1,6 +1,7 @@
 {
     "extends": ["airbnb", "prettier", "airbnb/hooks"],
-    "plugins": ["react", "prettier", "unused-imports"],
+    "parser": "babel-eslint",
+    "plugins": ["react", "prettier", "react-hooks", "unused-imports"],
     "parserOptions": {
         "sourceType": "module",
         "ecmaFeatures": { "jsx": true },
