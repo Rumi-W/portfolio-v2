@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '500',
         color: 'white',
         [theme.breakpoints.down('xs')]: {
-            fontSize: '32px'
+            fontSize: '32px',
+            color: theme.palette.primary.dark
         },
         '@media (max-width: 900px) and (orientation: landscape)': {
             fontSize: '2rem'

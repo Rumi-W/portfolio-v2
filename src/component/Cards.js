@@ -15,11 +15,8 @@ const useStyles = makeStyles((theme) => ({
             height: '90%'
         },
         [theme.breakpoints.down('xs')]: {
-            height: '90vh',
-            overflow: 'scroll',
+            height: 'auto',
             marginTop: theme.spacing(2),
-            marginBottom: theme.spacing(2),
-            paddingTop: theme.spacing(2),
             background: 'transparent'
         },
         '@media (max-width: 900px) and (orientation: landscape)': {
@@ -36,8 +33,7 @@ const useStyles = makeStyles((theme) => ({
             background: 'transparent'
         },
         [theme.breakpoints.down('xs')]: {
-            background: 'transparent',
-            height: 'atuo'
+            background: 'transparent'
         }
     },
     item: {
@@ -48,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             height: 'auto',
             marginBottom: theme.spacing(1),
-            marginTop: theme.spacing(1)
+            marginTop: 0
         }
     }
 }))

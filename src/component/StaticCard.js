@@ -19,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        color: theme.palette.primary.dark
     },
     icon: {
         textAlign: 'center'
