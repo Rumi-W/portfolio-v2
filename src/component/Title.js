@@ -6,11 +6,14 @@ const useStyles = makeStyles((theme) => ({
     div: {
         margin: 'auto'
     },
-    info: {
+    intro: {
         fontWeight: '500',
         color: 'white',
         [theme.breakpoints.down('xs')]: {
             textAlign: 'center'
+        },
+        '@media (max-width: 900px) and (orientation: landscape)': {
+            display: 'none'
         }
     },
     name: {
@@ -23,6 +26,13 @@ const useStyles = makeStyles((theme) => ({
         '@media (max-width: 900px) and (orientation: landscape)': {
             fontSize: '2rem'
         }
+    },
+    info: {
+        fontWeight: '500',
+        color: 'white',
+        [theme.breakpoints.down('xs')]: {
+            textAlign: 'center'
+        }
     }
 }))
 
@@ -32,7 +42,7 @@ const Title = () => {
     return (
         <div className={classes.div}>
             <Hidden xsDown>
-                <Typography variant="h5" className={classes.info}>
+                <Typography variant="h5" className={classes.intro}>
                     Hi, I am
                 </Typography>
             </Hidden>
