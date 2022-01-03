@@ -3,7 +3,7 @@ import Main from './component/Main'
 
 function App() {
     return (
-        <div className="App">
+        <div className="app">
             <header className="App-header" />
             <Main />
         </div>

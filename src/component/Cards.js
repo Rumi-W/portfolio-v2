@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
             marginBottom: theme.spacing(2),
             paddingTop: theme.spacing(2),
             background: 'transparent'
+        },
+        '@media (max-width: 900px) and (orientation: landscape)': {
+            height: '200%'
         }
     },
     container: {
@@ -57,7 +60,7 @@ const Cards = () => {
     })
 
     return (
-        <Paper elavation={4} className={classes.root}>
+        <Paper elavation={4} classes={{ root: classes.root }}>
             <Grid container className={classes.container} spacing={isPhone ? 1 : 2}>
                 {contents.map((item, i) => (
                     <Grid key={`skills-${i}`} item className={classes.item} xs={12} sm={6} md={6}>

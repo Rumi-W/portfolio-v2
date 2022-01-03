@@ -7,12 +7,14 @@ const useStyles = makeStyles((theme) => ({
     card: {
         height: '40%',
         width: '80%',
-
         marginTop: theme.spacing(1),
         overflow: 'auto',
         [theme.breakpoints.only('xs')]: {
             width: '90%',
             border: '1px solid #ccc'
+        },
+        '@media (max-width: 900px) and (orientation: landscape)': {
+            height: '40%'
         }
     },
     title: {
