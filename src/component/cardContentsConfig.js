@@ -38,16 +38,16 @@ export const contents = [
                 title: 'Personal projects',
                 content: '',
                 linksRepo: [
-                    {
-                        id: 'repo-1',
-                        proj: 'Demo 1',
-                        projUrl: 'https://rumi-w.github.io/build-a-burger/',
-                        repo: 'Repository',
-                        repoUrl: 'https://github.com/Rumi-W/build-a-burger'
-                    },
+                    // {
+                    //     id: 'repo-1',
+                    //     proj: 'Demo 1',
+                    //     projUrl: 'https://rumi-w.github.io/build-a-burger/',
+                    //     repo: 'Repository',
+                    //     repoUrl: 'https://github.com/Rumi-W/build-a-burger'
+                    // },
                     {
                         id: 'repo-2',
-                        proj: 'Demo 2',
+                        proj: 'Demo',
                         projUrl: 'https://rumi-w.github.io/list-albums/',
                         repo: 'Repository',
                         repoUrl: 'https://github.com/Rumi-W/list-albums'
