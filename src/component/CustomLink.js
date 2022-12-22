@@ -22,33 +22,9 @@ const useStyles = makeStyles((theme) => ({
         margin: 0,
         color: '#2867b2'
     },
-    repoLinks: {
-        display: 'flex',
-        width: '100%',
-        justifyContent: 'center',
+    project: {
         [theme.breakpoints.only('sm')]: {
-            width: '100%'
-        }
-    },
-    projectWrapLeft: {
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'flex-end',
-        paddingRight: theme.spacing(1),
-        [theme.breakpoints.only('sm')]: {
-            justifyContent: 'center',
-            paddingRight: 0
-        }
-    },
-    projectWrapRight: {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'flex-start',
-        paddingLeft: theme.spacing(1),
-        [theme.breakpoints.only('sm')]: {
-            justifyContent: 'center',
-            paddingLeft: 0
+            paddingBottom: theme.spacing(1)
         }
     }
 }))
@@ -57,7 +33,7 @@ const CustomLink = ({ linkInfo, type }) => {
     const classes = useStyles()
 
     return (
-        <div style={{ width: 'auto' }}>
+        <div>
             {type === 'link' ? (
                 <Tooltip title={linkInfo.alt}>
                     <Link href={linkInfo.url} target="_blank" alt={linkInfo.alt} rel="noreferrer">
@@ -71,8 +47,13 @@ const CustomLink = ({ linkInfo, type }) => {
                     </Link>
                 </Tooltip>
             ) : (
-                <Grid className={classes.repoLinks} container>
-                    <Grid item xs={6} sm={12} md={6} className={classes.projectWrapLeft}>
+                <Grid direction="row" justifyContent="center" alignItems="center" className={classes.project} container>
+                    <Grid item xs={4} sm={12} md={5} lg={4}>
+                        <Typography variant="subtitle1" component="div" align="center">
+                            {linkInfo.title}
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={2} sm={3} md={2}>
                         <Tooltip title={linkInfo.proj}>
                             <Link href={linkInfo.projUrl} target="_blank" alt={linkInfo.proj} rel="noreferrer">
                                 <Typography variant="subtitle1" component="div" className={classes.repoLink}>
@@ -81,7 +62,7 @@ const CustomLink = ({ linkInfo, type }) => {
                             </Link>
                         </Tooltip>
                     </Grid>
-                    <Grid item xs={6} sm={12} md={6} className={classes.projectWrapRight}>
+                    <Grid item xs={3} sm={3} md={2}>
                         <Tooltip title={linkInfo.repo}>
                             <Link href={linkInfo.repoUrl} target="_blank" alt={linkInfo.repo} rel="noreferrer">
                                 <Typography variant="subtitle1" component="div" className={classes.repoLink}>
